@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 39vh;
+    background-image: url(https://cdn.pixabay.com/photo/2024/08/28/12/57/alligator-9004022_640.jpg
+
+    );
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay{
+    padding: 1rem;
+    background-color: hsla(0 0 0 / .5);
+}
+
+.overlay button{
+    padding: .7rem;
+    width: 200px;
+    background-image: linear-gradient(45deg, darkred 50%, firebrick 50%);
+    border: none;
+    color: whitesmoke;
+}
+.product div {
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width:100%;
+    height: auto;
+}
+.fronts {
+    justify-content: center;
+    background-color: blue;
+    height: 100px;
+}
+
+.preContainer{
+    background-color: aqua;
+    padding: 2rem;
+}
+
+.container {
+    background-color: bisque;  
+    background-image: url('C:\Users\nicho\Desktop\codeReview2\images\background-image.gif'); /* Replace with your image path */
+    background-size: cover; /* Adjust to fit the container */
+    background-position: center; /* Center the image */
+    animation: moveBackground 10s linear infinite; /* Animation settings */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%; /* Adjust the direction of the motion */
+    }
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.pic {
+    margin-right: 1%; 
+}
+
+.name {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+.price {
+    margin-top: 1px;
+}
+

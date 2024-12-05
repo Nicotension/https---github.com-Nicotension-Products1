@@ -1,0 +1,51 @@
+body{
+    font-family: calibri;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container{
+    perspective: 100px;
+}
+
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.front, .back{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ border-radius: 8px;
+ backface-visibility: hidden;
+}
+
+.front{
+    background-color: black;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    color: aqua;
+    transform: rotateY(0deg);
+}
+
+.back{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    color: brown;
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card{
+    transform: rotateY(180deg);
+}
