@@ -51,10 +51,10 @@
 
 .container {
     background-color: bisque;  
-    background-image: url('C:\Users\nicho\Desktop\codeReview2\images\background-image.gif'); /* Replace with your image path */
-    background-size: cover; /* Adjust to fit the container */
-    background-position: center; /* Center the image */
-    animation: moveBackground 10s linear infinite; /* Animation settings */
+    background-image: url('C:\Users\nicho\Desktop\codeReview2\images\background-image.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    animation: moveBackground 10s linear infinite; 
 }
 
 @keyframes moveBackground {
@@ -62,7 +62,7 @@
         background-position: 0% 0%;
     }
     100% {
-        background-position: 100% 100%; /* Adjust the direction of the motion */
+        background-position: 100% 100%; 
     }
 }
 
